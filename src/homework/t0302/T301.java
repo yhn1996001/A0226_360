@@ -1,3 +1,4 @@
+package homework.t0302;
 public class T301 {
 
     public static void main(String[] args) {

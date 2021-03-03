@@ -1,3 +1,4 @@
+package homework.t0302;
 
 import java.io.BufferedReader;
 import java.io.IOException;

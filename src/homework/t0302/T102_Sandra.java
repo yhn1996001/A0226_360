@@ -1,3 +1,4 @@
+package homework.t0302;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
