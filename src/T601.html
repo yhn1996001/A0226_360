@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    請選擇骰子面數：
+    <select name="dice" id="dice">
+        <option value="1" >1面</option>
+        <option value="2" >2面</option>
+        <option value="3" >3面</option>
+        <option value="4" >4面</option>
+        <option value="5" >5面</option>
+        <option value="6" selected >6面</option>
+    </select>
+    請輸入骰子數量 ：<input type="dicNnumber" id="dicNnumber" />
+    請輸入要丟擲幾次：<input type="count" id="count" />
+    <br>
+    <button onclick="go(dice.value,dicNnumber.value,count.value)">擲出</button>
+    <table id="ans">
+    </table>
+</body>
+<script>
+    function go(dicelist, dicNnumber, dicCount){
+        document.querySelector('#ans').innerHTML=''
+
+        myMap = new Map();
+        for (var i = 0; i < dicCount; i++) {
+            let sum=0;
+            for (var j = 0; j < dicNnumber; j++) {
+                sum+=Math.floor(Math.random() * Math.floor(dicelist))+1   
+            }
+            // console.log('i' + ' = ' + i);
+            // console.log('sum' + ' = ' + sum);
+
+            if(myMap.get(sum)==null){
+                myMap.set(sum,'■');
+            }else{
+                myMap.set(sum,myMap.get(sum)+'■');
+            }
+                
+        }
+        var mapAsc = new Map([...myMap.entries()].sort(
+            function (a,b) {
+                // console.log('a',a)
+                // console.log('a[0]-b[0]',a[0]-b[0])
+                return a[0]-b[0];
+            }
+        ));
+
+        // 用 appendChild() 把上面寫好的子節點掛在既有的 h1 下面，新增的內容會依序排列在後面，不會被洗掉
+        // 先用 JS 寫好要增加的內容
+        var str = document.createElement('tbody');
+                str.innerHTML+='<tr>'
+                str.innerHTML+='<td>'+ "Total" + '</td>'+'<td>'+ "times" + '</td>'
+                str.innerHTML+='</tr>'
+            mapAsc.forEach(function(value, key){
+                str.innerHTML+='<tr>'
+                str.innerHTML+='<td>'+ key + '</td>'+'<td>'+ value + '</td>'
+                str.innerHTML+='</tr>'
+            })
+        // 用 appendChild() 把上面寫好的子節點掛在既有的 h1 下面，新增的內容會依序排列在後面，不會被洗掉
+        document.querySelector('#ans').appendChild(str);
+
+    }
+</script>
+
+</html>
