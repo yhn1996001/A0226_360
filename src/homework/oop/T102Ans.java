@@ -1,10 +1,7 @@
 package homework.oop;
 
 import java.math.BigDecimal;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class T102Ans {
 
