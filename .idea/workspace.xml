@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="accc7d5c-dca0-4a05-86ac-80e4dafd51a0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\JAVA\tools\.m2\repository" />
+        <option name="mavenHome" value="D:/JAVA/tools/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\JAVA\tools\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pHP4c81CUTDO916YS6JdfNp66m" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="accc7d5c-dca0-4a05-86ac-80e4dafd51a0" name="Default Changelist" comment="" />
+      <created>1614836851935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614836851935</updated>
+      <workItem from="1614836861699" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="556" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1614836862236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="556" y="301" key="com.intellij.ide.util.TipDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1614836862236" />
+  </component>
+</project>

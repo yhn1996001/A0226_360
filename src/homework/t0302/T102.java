@@ -19,16 +19,7 @@ public class T102 {
         while (count!=15){
 //          浮點數 區間 1~10
             double v = (Math.random() * 9.0)+1.0;
-//            0=<Math.random()<1
-//            1               10
-//                0.9999.....*10
-//                  9.9.... +1
-//            10.45643216
-//            0 +1 >1
-//            8.984659 +1
-//            9.534654
-//            10
-//            (Math.random() * (max-min))+1.0;
+
 //          小數保留3位數
             String format = String.format("%.3f", v);
 //          判斷浮點數是否加入成功，成功加入表示不重複，反之重複
@@ -53,7 +44,6 @@ public class T102 {
         System.out.println("總和："+sum);
         System.out.println("平均數："+String.format("%.3f", avg));
     }
-
 
 
 }
